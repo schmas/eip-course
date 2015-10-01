@@ -1,12 +1,11 @@
 package br.com.argonavis.eipcourse.exercises.ch3.exercise;
 
-import br.com.argonavis.eipcourse.exercises.ch3.MockData;
+import br.com.argonavis.eipcourse.exercises.utils.MockData;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.*;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.impl.DefaultCamelContext;
-import org.apache.camel.impl.DefaultExchange;
 
 import javax.jms.ConnectionFactory;
 
@@ -36,8 +35,6 @@ public class ExerciseWithCamel {
             template.sendBodyAndHeader("jms:queue:inbound", xml, "type", "xml");
 
         }
-
-
 
 
         System.out.println("O servidor está no ar. "

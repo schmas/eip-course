@@ -1,6 +1,7 @@
 package br.com.argonavis.eipcourse.exercises.ch3.exercise;
 
-import br.com.argonavis.eipcourse.exercises.ch3.MockData;
+
+import br.com.argonavis.eipcourse.exercises.utils.MockData;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
